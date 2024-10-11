@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Handsome</title>
+        <style>
+            div.hidden {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body class='centre'>
+        <h1><strong>Who doesn't want a smoking hot guy?</strong></h1>
+        <h2>
+            And we hear you!
+            <br>
+            <br>
+            We've devised a award winning complex algorithm based on your own preference to determine the best looking guy in our database for you!
+        </h2>
+        <br>
+        <h3>What kind of good looks does thou prefer?</h3>
+        <select>
+            <option>select option</option>
+            <option>Handsome</option>
+            <option>Cute</option>
+            <option>Hot</option>
+        </select>
+        <br>
+        <br>
+        <div class='hidden'>
+            <div class="alert alert-danger" role="alert">
+                WARNING! SERIOUSLY GOOD LOOKING GUY AHEAD
+            </div>
+            <h5>Here's your perfect match</h5>
+            <img src="ryan.jpg" alt="Picture of a good looking guy">
+            <p>
+                Name: Ryan Jeremy Lim
+                <br>
+                Age: 22
+                <br>
+                Looks: Perfect
+                <br>
+                Best features: Honestly everything
+            </p>
+            <h2>Date the handsome lad?</h2>
+            <button onclick='out()'>IMMEDIATELY PLEASE</button>
+            <script>
+                function out() {
+                    alert('Sorry he is out of your league');
+                }
+            </script>
+            <button onclick='picky()'>Nah</button>
+            <script>
+                function picky() {
+                    alert('Why so picky? This is why you are single');
+                }
+
+                document.querySelector('select').onchange = function() {
+                    let looks= document.querySelector('div');
+                    looks.style.visibility = 'visible';
+                }
+            </script>
+            <h4>
+                <br>
+                Not to your liking? No worries! There are always more fish in the sea :)
+                <br>
+                Try again!
+            </h4>
+            <p>
+            <a href="funny.html">Funny</a>
+            <br>
+            <a href="smart.html">Smart</a>
+            <br>
+            <a href="all.html">Talented</a>
+            </p>
+        </div>
+    </body>
+</html>

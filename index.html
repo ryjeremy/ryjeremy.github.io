@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Tinder 2.0</title>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                document.querySelector('#greeting').innerHTML = 'Hello, very single ' + name + '!';
+            }
+        </script>
+    </head>
+    <body class='centre'>
+        <h1><strong>HOT SINGLES IN YOUR AREA</strong></h1>
+        <h1 id='greeting'>Hello, single person!</h1>
+        <p>
+            Welcome to Tinder 2.0!
+            <br>
+            You must be very lonely if you are here...
+            <br>
+            But fret not! This is the updated and improved version of tinder which will find the perfect boy for you :)
+        </p>
+        <h2>
+            So what are you waiting for!
+            <br>
+            Let's get started!!!
+        </h2>
+        <h3>What's your name?</h3>
+        <form onsubmit='greet(); return false;'>
+            <input type='text' id='name'>
+            <input type='submit'>
+        </form>
+        <br>
+        <h3>What's the most important quality you look for in a guy?</h3>
+        <p>Click one of the following options:
+        <br>
+        <a href="handsome.html">Good Looking</a>
+        <br>
+        <a href="funny.html">Funny</a>
+        <br>
+        <a href="smart.html">Smart</a>
+        <br>
+        <a href="all.html">All of the Above</a></p>
+    </body>
+</html>

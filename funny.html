@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Funny</title>
+        <style>
+            div.hidden {
+                visibility: hidden;
+            }
+        </style>
+        <script>
+            function joke()
+            {
+                let look= document.querySelector('div');
+                look.style.visibility = 'visible';
+            }
+        </script>
+    </head>
+    <body class='centre'>
+        <h1>
+            <Strong>Knock Knock</Strong>
+            <br>
+            Who's there?
+            <br>
+            <Strong>Duya</Strong>
+            <br>
+            Duya who?
+            <br>
+            <Strong>Do ya wanna go out with this funny guy!!!</Strong>
+        </h1>
+        <h5>Here's your perfect match</h5>
+        <img src="funny.jpg" alt="Picture of a hilarious guy">
+        <p>
+            This is Ryan Jeremy, he enjoys making people laugh and he is the funniest guy on this site based on previous reviews.
+            <br>
+            Guaranteed for a hilarious time ;)
+            <br>
+            <br>
+            <button onclick='joke()'>Click to hear a joke</button>
+        <div class='hidden'>
+            Why do you tell actors to break a leg?
+            <br>
+            Because every play has a cast! HAHAHAHHAHAHAHAHA
+        </div>
+        </p>
+        <h2>Pick this hilarious man?</h2>
+        <button onclick='out()'>IMMEDIATELY PLEASE</button>
+        <script>
+            function out() {
+                alert('Sorry he is out of your league');
+            }
+        </script>
+        <button onclick='picky()'>Nah</button>
+        <script>
+            function picky() {
+                alert('Why so picky? This is why you are single');
+            }
+        </script>
+        <h4>
+            <br>
+            Not funny enough for you? It's alright! If you miss this bus, you can always get on the next one :)
+            <br>
+            Try again!
+        </h4>
+        <p>
+            <a href="handsome.html">Good Looking</a>
+            <br>
+            <a href="smart.html">Smart</a>
+            <br>
+            <a href="all.html">Talented</a>
+        </p>
+    </body>
+</html>
