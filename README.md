@@ -1,1 +1,0 @@
-# ryjeremy.github.io
